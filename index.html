@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Project SINAG information website for active citizenry, bayanihan, and sustainable communities in Angeles City." />
+  <meta name="theme-color" content="#0f3b70" />
+  <title>Project SINAG | Empowering Communities Together</title>
+  <link rel="icon" href="assets/project-sinag-logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Project SINAG home">
+      <img src="assets/project-sinag-logo.png" alt="Project SINAG logo" />
+      <span>
+        <strong>Project SINAG</strong>
+        <small>Angeles City</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#focus">Focus Areas</a>
+      <a href="#sdg">SDG Actions</a>
+      <a href="#participate">Participate</a>
+      <a href="#quiz">Quiz</a>
+      <button class="fb-link nav-cta" type="button">Be a Sinag Volunteer!</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">DILG Angeles City Community Initiative</p>
+          <h1>Project SINAG</h1>
+          <p class="hero-subtitle">Empowering Communities Together</p>
+          <p class="hero-text">
+            Strengthening active citizenry, discipline, and bayanihan by making grassroots communities active partners
+            of the government.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#sdg">View Citizen Actions</a>
+            <a class="btn btn-outline" href="#quiz">Take SINAG Quiz</a>
+            <button class="btn btn-outline fb-link" type="button">Message Facebook Page</button>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <img src="assets/project-sinag-logo.png" alt="Project SINAG logo with sun, home, and hands" />
+          <div class="quick-info">
+            <span>Solid Waste Management</span>
+            <span>Climate Action</span>
+            <span>Disaster Preparedness</span>
+            <span>Food Sustainability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tarp-preview" aria-label="Project SINAG campaign banner">
+      <img src="assets/sinag-main-tarp.png" alt="Project SINAG Bayanihan Clean Up Drive banner" />
+    </section>
+
+    <section class="section-pad quiz-embed-section" id="quiz">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Interactive Quiz</p>
+          <h2>Alamin ang Ilaw Mo sa SINAG.</h2>
+          <p class="section-note">Sagutan ang 10 tanong at automatic lalabas ang iyong SINAG archetype result.</p>
+        </div>
+
+        <div class="quiz-frame-card reveal">
+          <iframe
+            id="sinagQuizFrame"
+            src="quiz.html"
+            title="Alamin ang Ilaw Mo sa SINAG quiz"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="about">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Overview</p>
+          <h2>Making communities active partners in local development.</h2>
+        </div>
+        <div class="about-content reveal">
+          <p>
+            Project SINAG intensifies the implementation of DILG programs and local government priority thrusts by
+            empowering grassroots communities to participate in governance and sustainable development.
+          </p>
+          <p>
+            It promotes a culture of active citizenry, discipline, and bayanihan, encouraging residents to take
+            ownership of their community’s progress while strengthening responsibility and national pride.
+          </p>
+          <div class="value-list" id="values-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad soft-section" id="focus">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Focus Areas</p>
+          <h2>Priority areas for a brighter, cleaner, and safer Angeles City.</h2>
+        </div>
+        <div class="card-grid" id="focus-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="sdg">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">SDG Action Guide</p>
+          <h2>Simple actions every household and community can do.</h2>
+          <p class="section-note">Tap a goal to view practical household and community activities.</p>
+        </div>
+
+        <div class="sdg-tabs reveal" id="sdg-tabs" role="tablist" aria-label="Sustainable Development Goals"></div>
+        <article class="sdg-panel reveal" id="sdg-panel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-header">
+        <p class="section-label">Community Voices</p>
+        <h2>Testimonies from the Community</h2>
+        <p>
+          Stories and experiences from residents, volunteers, and partners who
+          participated in Project SINAG activities.
+        </p>
+      </div>
+
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <!-- Testimony cards will be added here using JavaScript -->
+      </div>
+    </section>
+
+    <section class="section-pad soft-section" id="participate">
+      <div class="container participate-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How to Participate</p>
+          <h2>Be part of the bayanihan movement.</h2>
+          <p>
+            Project SINAG works best when residents, families, youth groups, barangays, and local partners take small
+            but consistent actions together.
+          </p>
+        </div>
+
+        <div class="steps reveal" id="steps-list"></div>
+      </div>
+    </section>
+
+    <section class="cta-section section-pad">
+      <div class="container cta-card reveal">
+        <div>
+          <p class="eyebrow">Questions or updates?</p>
+          <h2>Connect with Project SINAG through Facebook.</h2>
+          <p>
+            For event announcements, inquiries, coordination, and other concerns, visit the official Facebook page
+            linked to this website.
+          </p>
+        </div>
+        <button class="btn btn-primary fb-link" type="button">Go to Facebook Page</button>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Project SINAG</strong>
+        <p>Empowering Communities Together</p>
+      </div>
+      <div>
+        <p>DILG Angeles City</p>
+        <p class="footer-small">Active citizenry • Discipline • Bayanihan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "project-sinag-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Project SINAG information website deployable on Vercel.",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  }
+}
