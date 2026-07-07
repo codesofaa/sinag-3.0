@@ -789,6 +789,102 @@ h1 {
   }
 }
 
+
+
+/* featured video section */
+.video-section {
+  background:
+    radial-gradient(circle at 8% 20%, rgba(255, 199, 44, 0.22), transparent 28%),
+    radial-gradient(circle at 96% 14%, rgba(247, 148, 29, 0.12), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #fff9e7 100%);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 1.12fr);
+  gap: 34px;
+  align-items: center;
+}
+
+.video-section .section-heading h2 {
+  max-width: 650px;
+}
+
+.video-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.video-highlights span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  color: var(--blue);
+  font-size: 0.88rem;
+  font-weight: 900;
+  border: 1px solid rgba(247, 148, 29, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.video-highlights span::before {
+  content: "✦";
+  color: var(--orange);
+}
+
+.video-card {
+  position: relative;
+  padding: clamp(10px, 2vw, 16px);
+  border: 1px solid rgba(247, 148, 29, 0.26);
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255, 246, 223, 0.78));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.video-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255,199,44,0.18), transparent 34%),
+    radial-gradient(circle at 100% 100%, rgba(18,59,119,0.08), transparent 36%);
+  pointer-events: none;
+}
+
+.featured-video {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 24px;
+  background: #0b2c5e;
+  object-fit: cover;
+  box-shadow: 0 18px 38px rgba(11, 44, 94, 0.16);
+}
+
+@media (max-width: 960px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .video-card {
+    border-radius: 24px;
+  }
+
+  .featured-video {
+    border-radius: 18px;
+  }
+}
+
 /* embedded SINAG archetype quiz */
 .quiz-embed-section {
   background:
