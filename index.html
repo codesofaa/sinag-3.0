@@ -31,6 +31,8 @@
     <nav class="main-nav" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#video">Video</a>
+      <a href="#ivy2026">IVY 2026</a>
+      <a href="#gallery">Gallery</a>
       <a href="#focus">Focus Areas</a>
       <a href="#sdg">SDG Actions</a>
       <a href="#participate">Participate</a>
@@ -54,6 +56,7 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="#sdg">View Citizen Actions</a>
             <a class="btn btn-outline" href="#video">Watch Video</a>
+            <a class="btn btn-outline" href="#ivy2026">IVY 2026</a>
             <a class="btn btn-outline" href="#quiz">Take SINAG Quiz</a>
             <button class="btn btn-outline fb-link" type="button">Message Facebook Page</button>
           </div>
@@ -81,7 +84,7 @@
           <p class="eyebrow">Project SINAG in Action</p>
           <h2>Mas madaling maunawaan ang SINAG kapag nakikita ang bayanihan.</h2>
           <p class="section-note">
-            Ilagay ang featured video dito para unang makita ng visitors ang real activity, energy, at impact ng Project SINAG bago sila mag-quiz o magbasa ng detalye.
+            Panoorin ang maikling reels-style video ng Project SINAG activity para makita ang energy, teamwork, at bayanihan sa komunidad.
           </p>
           <div class="video-highlights" aria-label="Video highlights">
             <span>Community action</span>
@@ -90,17 +93,92 @@
           </div>
         </div>
 
-        <div class="video-card reveal">
+        <div class="video-card reel-video-card reveal">
           <video
-            class="featured-video"
-            controls
+            class="featured-video reel-video"
+            autoplay
+            muted
+            loop
             playsinline
+            controls
             preload="metadata"
             poster="assets/video/pandan-poster.jpg"
           >
             <source src="assets/video/pandan.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad ivy-section" id="ivy2026">
+      <div class="container ivy-card reveal">
+        <div class="ivy-content">
+          <p class="eyebrow">Global Volunteer Movement</p>
+          <h2>International Volunteer Year 2026</h2>
+          <p>
+            Project SINAG supports the spirit of volunteerism, bayanihan, and sustainable development. The International Volunteer Year 2026 message connects local action with a global movement of service.
+          </p>
+          <p>
+            Use this section to show that every volunteer effort matters — from clean-up drives and community support to advocacy, training, and participation.
+          </p>
+          <div class="ivy-actions">
+            <a
+              class="btn btn-primary"
+              href="https://www.unv.org/sites/default/files/IVY%202026%20-%20Quick%20Facts%20and%20Key%20Messages.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              View IVY 2026 Quick Facts
+            </a>
+            <a class="btn btn-outline" href="#quiz">Discover Your SINAG Archetype</a>
+          </div>
+        </div>
+
+        <figure class="ivy-photo-card">
+          <img src="assets/gallery/ivy2026.jpg" alt="International Volunteer Year 2026 Philippines event photo" loading="lazy" />
+          <figcaption>#EveryContributionMatters • #IVY2026 Philippines</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-pad gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Community Gallery</p>
+          <h2>Project SINAG across barangays.</h2>
+          <p class="section-note">
+            Photos from Project SINAG activities and community engagements in Angeles City barangays.
+          </p>
+        </div>
+
+        <div class="activity-gallery">
+          <article class="gallery-card reveal">
+            <img src="assets/gallery/brgy-pandan.jpg" alt="Project SINAG activity in Barangay Pandan" loading="lazy" />
+            <div class="gallery-card-content">
+              <span>Barangay Pandan</span>
+              <h3>Bayanihan Clean-Up Drive</h3>
+              <p>Community members and volunteers working together for a cleaner and more active barangay.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal">
+            <img src="assets/gallery/brgy-malabanias.jpg" alt="Project SINAG activity in Barangay Malabanias" loading="lazy" />
+            <div class="gallery-card-content">
+              <span>Barangay Malabanias</span>
+              <h3>Volunteer Engagement</h3>
+              <p>Residents, partners, and volunteers joining hands to support local community initiatives.</p>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal">
+            <img src="assets/gallery/brgy-ninoy-aquino.jpg" alt="Project SINAG activity in Barangay Ninoy Aquino" loading="lazy" />
+            <div class="gallery-card-content">
+              <span>Barangay Ninoy Aquino</span>
+              <h3>Community Participation</h3>
+              <p>Strengthening citizen involvement through simple, visible, and collective action.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
