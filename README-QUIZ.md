@@ -67,4 +67,4 @@ If this is left blank, the quiz still works but will not save submissions.
 
 ## Naming note
 
-This version uses **Tagahubog** to match the latest mascot image labels. If your final name is **Tagahugis**, search and replace `Tagahubog` with `Tagahugis` inside `quiz.html` and the image filename can stay the same.
+This version uses **Tagahugis** in the quiz text while keeping the existing `tagahubog.png` image filename.

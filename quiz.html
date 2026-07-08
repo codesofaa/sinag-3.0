@@ -529,8 +529,8 @@
           <p class="eyebrow">Project SINAG Archetype Quiz</p>
           <h1 id="quiz-title">Alamin ang Ilaw Mo sa SINAG ✨</h1>
           <p>
-            Sagutan ang 10 tanong. Pagkatapos, automatic lalabas ang iyong archetype:
-            Tagapaglingkod, Tagahubog, Tagapagtanggol, Tagapagbuklod, o Tagasunod.
+            Sagutan ang 20 tanong. Pagkatapos, automatic lalabas ang iyong archetype:
+            Tagapaglingkod, Tagahugis, Tagapagtanggol, Tagapagbuklod, o Tagasunod.
           </p>
           <div class="intro-actions">
             <button class="btn btn-primary" type="button" id="startQuizBtn">Start Quiz</button>
@@ -542,10 +542,10 @@
           <img src="assets/archetypes/sinag.png" alt="SINAG mascot" />
           <div class="archetype-pills" aria-label="Available archetypes">
             <span class="pill">❤️ Tagapaglingkod</span>
-            <span class="pill">🚀 Tagahubog</span>
+            <span class="pill">🚀 Tagahugis</span>
             <span class="pill">🌱 Tagapagtanggol</span>
             <span class="pill">🤝 Tagapagbuklod</span>
-            <span class="pill">🌾 Tagasunod</span>
+            <span class="pill">🛡️ Tagasunod</span>
           </div>
         </aside>
       </div>
@@ -553,8 +553,8 @@
       <div class="question-view hide" id="questionView">
         <div class="quiz-progress-wrap" aria-label="Quiz progress">
           <div class="progress-topline">
-            <span id="questionCounter">Question 1 of 10</span>
-            <span id="answeredCounter">0/10 answered</span>
+            <span id="questionCounter">Question 1 of 20</span>
+            <span id="answeredCounter">0/20 answered</span>
           </div>
           <div class="progress-bar" aria-hidden="true">
             <div class="progress-fill" id="progressFill"></div>
@@ -587,101 +587,201 @@
       {
         title: "1. Friday night. May free time ka. Ano gagawin mo?",
         choices: [
-          { letter: "A", text: "Yayaya ng tropa para tumulong sa isang drive", code: "B" },
-          { letter: "B", text: "Magbabasa/manonood ng tutorial para sa skills", code: "H" },
+          { letter: "A", text: "Yayayain ko yung tropa para sa drive", code: "B" },
+          { letter: "B", text: "Magbabasa ako ng tutorial para sa skills", code: "H" },
           { letter: "C", text: "Magluluto at dadalhin sa kapitbahay na may sakit", code: "L" },
-          { letter: "D", text: "Magsha-share ng post about sa isang issue", code: "T" },
-          { letter: "E", text: "Maghihintay kung may chat na ‘tara, may gagawin tayo’", code: "S" }
+          { letter: "D", text: "Magsha-share ako ng post about sa issue", code: "T" },
+          { letter: "E", text: "Maghihintay ako kung may chat na \"tara\"", code: "S" }
         ]
       },
       {
-        title: "2. Sa grocery, nakakita ka ng promo ‘Buy 1 Take 1’. Ano una mong naisip?",
+        title: "2. Anong quote ang pinaka-tumatak sayo?",
         choices: [
-          { letter: "A", text: "Sustainable ba ‘tong brand na ‘to?", code: "T" },
-          { letter: "B", text: "Sino pa isasama ko mamili para mas marami?", code: "B" },
-          { letter: "C", text: "Paano ko ito magagamit sa project namin?", code: "H" },
-          { letter: "D", text: "Sino kaya mabibigyan ko nito?", code: "L" },
-          { letter: "E", text: "Okay, bibili na lang kung ano sabi", code: "S" }
+          { letter: "A", text: "Walang imposible sa may plano", code: "H" },
+          { letter: "B", text: "Ang katahimikan sa harap ng mali ay pakikiisa sa mali", code: "T" },
+          { letter: "C", text: "Serbisyo ay pagmamahal sa aksyon", code: "L" },
+          { letter: "D", text: "Bayanihan nagsisimula sa isang oo", code: "S" },
+          { letter: "E", text: "Walang maiiwan", code: "B" }
         ]
       },
       {
-        title: "3. Pagod na pagod ka pero may emergency meeting. Ikaw ay:",
+        title: "3. Sa group work, ano role mo madalas?",
         choices: [
-          { letter: "A", text: "Pupunta kasi andun yung barkada/team", code: "B" },
-          { letter: "B", text: "Pupunta kasi baka pag-usapan yung adbokasiya", code: "T" },
-          { letter: "C", text: "Pupunta kasi in-announce na mandatory", code: "S" },
-          { letter: "D", text: "Pupunta kasi baka may tao na nangangailangan", code: "L" },
-          { letter: "E", text: "Pupunta kasi may dapat i-finalize sa plano", code: "H" }
+          { letter: "A", text: "Yung nagmo-motivate at nagbubuo ng team", code: "B" },
+          { letter: "B", text: "Yung gumagawa ng plano at nag-aassign", code: "H" },
+          { letter: "C", text: "Yung nagpapaalala kung ano yung tama", code: "T" },
+          { letter: "D", text: "Yung gumagawa ng task nang walang reklamo", code: "S" },
+          { letter: "E", text: "Yung nagche-check kung okay lahat", code: "L" }
         ]
       },
       {
-        title: "4. Anong apps ang pinaka-bukas sa phone mo?",
+        title: "4. Kung hayop ka, ano ka?",
         choices: [
-          { letter: "A", text: "Notes, Calendar, Canva", code: "H" },
-          { letter: "B", text: "GC ng grupo, Viber, Group Chat", code: "B" },
-          { letter: "C", text: "Wala. Basta may mag-message, rereplyan ko", code: "S" },
-          { letter: "D", text: "Messenger - kumakausap sa tao", code: "L" },
-          { letter: "E", text: "News, Twitter/X, FB pages ng cause", code: "T" }
+          { letter: "A", text: "Ant - masipag at sumusunod", code: "S" },
+          { letter: "B", text: "Golden Retriever - maalaga", code: "L" },
+          { letter: "C", text: "Eagle - matapang at may prinsipyo", code: "T" },
+          { letter: "D", text: "Owl - matalino at strategic", code: "H" },
+          { letter: "E", text: "Dolphin - social at team player", code: "B" }
         ]
       },
       {
-        title: "5. Kung superhero ka, anong power gusto mo?",
+        title: "5. May clean-up drive pero kulang sa tao. Ikaw ay:",
         choices: [
-          { letter: "A", text: "Super Voice - para marinig ng lahat ang katotohanan", code: "T" },
-          { letter: "B", text: "Duplication - para makatulong sa maraming lugar", code: "B" },
-          { letter: "C", text: "Adaptability - para mag-fit sa kahit anong team", code: "S" },
-          { letter: "D", text: "Healing - para pagalingin lahat", code: "L" },
-          { letter: "E", text: "Super Brain - para may solusyon sa lahat", code: "H" }
+          { letter: "A", text: "Tatawag sa lahat ng contacts para mag-recruit", code: "B" },
+          { letter: "B", text: "Gagawa ng strategy para sa next time", code: "H" },
+          { letter: "C", text: "Ipopost kung bakit importante ang kalinisan", code: "T" },
+          { letter: "D", text: "Gagawin ko yung part ko at maghihintay", code: "S" },
+          { letter: "E", text: "Mauuna magsimula kahit mag-isa", code: "L" }
         ]
       },
       {
-        title: "6. Anong comment ang madalas mong marinig?",
+        title: "6. Ano ang pinaka-importante sa isang volunteer?",
         choices: [
-          { letter: "A", text: "Si __ ang madaming kakilala", code: "B" },
-          { letter: "B", text: "Si __ ang may prinsipyo", code: "T" },
-          { letter: "C", text: "Si __ ang maaasahan pag sinabihan", code: "S" },
-          { letter: "D", text: "Buti pa si __, maalalahanin", code: "L" },
-          { letter: "E", text: "Si __ ang may diskarte", code: "H" }
+          { letter: "A", text: "Disiplina at Galing", code: "H" },
+          { letter: "B", text: "Paninindigan", code: "T" },
+          { letter: "C", text: "Pagsunod", code: "S" },
+          { letter: "D", text: "Malasakit", code: "L" },
+          { letter: "E", text: "Pakikipagkapwa", code: "B" }
         ]
       },
       {
-        title: "7. Sa isang project, ano pinaka ayaw mo?",
+        title: "7. Pag may nangangailangan sa barangay, ano unang gagawin mo?",
         choices: [
-          { letter: "A", text: "Lihis sa goal at values", code: "T" },
-          { letter: "B", text: "Kakaunti yung tumutulong", code: "B" },
-          { letter: "C", text: "Walang malinaw na instruction", code: "S" },
-          { letter: "D", text: "Hindi nakakausap yung mga tao", code: "L" },
-          { letter: "E", text: "Walang plano at magulo", code: "H" }
+          { letter: "A", text: "Hihintayin ko kung ano sasabihin ng barangay", code: "S" },
+          { letter: "B", text: "Pupuntahan ko para kumustahin", code: "L" },
+          { letter: "C", text: "Mag-iisip ako ng long-term solution", code: "H" },
+          { letter: "D", text: "Ipopost ko para marinig ng marami", code: "T" },
+          { letter: "E", text: "Yayayain ko mga kakilala ko", code: "B" }
         ]
       },
       {
-        title: "8. Kung pagkain ka, ano ka?",
+        title: "8. Saan ka pinaka-magaling?",
         choices: [
-          { letter: "A", text: "Sili - may anghang at paninindigan", code: "T" },
-          { letter: "B", text: "Boodle Fight - para sa lahat", code: "B" },
-          { letter: "C", text: "Kanin - kasama sa kahit anong ulam", code: "S" },
-          { letter: "D", text: "Sinigang - pampaginhawa", code: "L" },
-          { letter: "E", text: "Bento Box - organized at complete", code: "H" }
+          { letter: "A", text: "Pagkilala sa tao at pag-aaya", code: "B" },
+          { letter: "B", text: "Pakikinig at pakikipag-usap", code: "L" },
+          { letter: "C", text: "Pag-aanalyze at pag-oorganisa", code: "H" },
+          { letter: "D", text: "Pagsunod sa instruction", code: "S" },
+          { letter: "E", text: "Pagsasalita at pagdedepensa", code: "T" }
         ]
       },
       {
-        title: "9. Ano ang ‘win’ para sayo pagkatapos ng activity?",
+        title: "9. Kung pipili ka ng training, ano gusto mo?",
         choices: [
-          { letter: "A", text: "Napag-usapan yung issue", code: "T" },
-          { letter: "B", text: "Dumami yung volunteers", code: "B" },
-          { letter: "C", text: "Tapos yung task na binigay", code: "S" },
-          { letter: "D", text: "May ngumiti at nagpasalamat", code: "L" },
-          { letter: "E", text: "Na-hit yung target at may report", code: "H" }
+          { letter: "A", text: "Basic Operations at Safety", code: "S" },
+          { letter: "B", text: "Community Engagement", code: "L" },
+          { letter: "C", text: "Project Planning at Leadership", code: "H" },
+          { letter: "D", text: "Public Speaking at Advocacy", code: "T" },
+          { letter: "E", text: "Event Management", code: "B" }
         ]
       },
       {
-        title: "10. Pumili ng 1 word:",
+        title: "10. Anong kulay ang pipiliin mo?",
         choices: [
-          { letter: "A", text: "Tapang", code: "T" },
-          { letter: "B", text: "Sama", code: "B" },
-          { letter: "C", text: "Handa", code: "S" },
-          { letter: "D", text: "Alaga", code: "L" },
-          { letter: "E", text: "Bukas", code: "H" }
+          { letter: "A", text: "Berde - adbokasiya", code: "T" },
+          { letter: "B", text: "Puti - linis at pagsunod", code: "S" },
+          { letter: "C", text: "Pula - puso", code: "L" },
+          { letter: "D", text: "Asul - isip", code: "H" },
+          { letter: "E", text: "Dilaw - saya", code: "B" }
+        ]
+      },
+      {
+        title: "11. May narinig kang bad comment about sa project. Reaction mo:",
+        choices: [
+          { letter: "A", text: "Sasabihin ko sa leader", code: "S" },
+          { letter: "B", text: "Kausapin ko ng maayos", code: "L" },
+          { letter: "C", text: "I-review natin yung process", code: "H" },
+          { letter: "D", text: "Hindi tama yun. Ipagtatanggol ko", code: "T" },
+          { letter: "E", text: "Mag-usap tayo lahat", code: "B" }
+        ]
+      },
+      {
+        title: "12. Anong task ang pinaka-gusto mo?",
+        choices: [
+          { letter: "A", text: "Mag-repack at mag-distribute", code: "S" },
+          { letter: "B", text: "Home visit at feeding", code: "L" },
+          { letter: "C", text: "Gumawa ng proposal at budget", code: "H" },
+          { letter: "D", text: "Magsalita sa forum", code: "T" },
+          { letter: "E", text: "Mag-recruit at mag-coordinate", code: "B" }
+        ]
+      },
+      {
+        title: "13. Pagod ka na pero may emergency repacking. Ano gagawin mo?",
+        choices: [
+          { letter: "A", text: "Pupunta kasi andun yung team ko", code: "B" },
+          { letter: "B", text: "Pupunta kasi may pamilya na gutom", code: "L" },
+          { letter: "C", text: "Pupunta kasi may deadline", code: "H" },
+          { letter: "D", text: "Pupunta kasi sinabihan ako", code: "S" },
+          { letter: "E", text: "Pupunta kasi para sa mga nasalanta", code: "T" }
+        ]
+      },
+      {
+        title: "14. Sa GC, ano madalas mong i-send?",
+        choices: [
+          { letter: "A", text: "Noted po", code: "S" },
+          { letter: "B", text: "Kamusta kayo? Ingat", code: "L" },
+          { letter: "C", text: "Eto yung agenda natin", code: "H" },
+          { letter: "D", text: "Basahin niyo 'to. Importante", code: "T" },
+          { letter: "E", text: "Tara! Sino sasama?", code: "B" }
+        ]
+      },
+      {
+        title: "15. Ano pangarap mo para sa barangay mo?",
+        choices: [
+          { letter: "A", text: "Disiplinado at tumutulong", code: "S" },
+          { letter: "B", text: "Walang gutom at may nag-aalaga", code: "L" },
+          { letter: "C", text: "Maayos at maunlad", code: "H" },
+          { letter: "D", text: "May boses ang mahihina", code: "T" },
+          { letter: "E", text: "Nagkakaisa at aktibo", code: "B" }
+        ]
+      },
+      {
+        title: "16. Pag may conflict sa team, ikaw ang:",
+        choices: [
+          { letter: "A", text: "Susunod sa decision ng nakakataas", code: "S" },
+          { letter: "B", text: "Tagapamagitan", code: "L" },
+          { letter: "C", text: "Tagahanap ng solusyon", code: "H" },
+          { letter: "D", text: "Tagapaalala ng goal", code: "T" },
+          { letter: "E", text: "Tagabuo ulit ng samahan", code: "B" }
+        ]
+      },
+      {
+        title: "17. Ano ang ayaw na ayaw mo?",
+        choices: [
+          { letter: "A", text: "Walang malinaw na utos", code: "S" },
+          { letter: "B", text: "May taong napapabayaan", code: "L" },
+          { letter: "C", text: "Walang plano at magulo", code: "H" },
+          { letter: "D", text: "Hindi pinaglalaban ang tama", code: "T" },
+          { letter: "E", text: "Walang tumutulong", code: "B" }
+        ]
+      },
+      {
+        title: "18. Kung bigyan ka ng 10,000 para sa project, saan mo gagamitin?",
+        choices: [
+          { letter: "A", text: "Ibibigay ko sa leader", code: "S" },
+          { letter: "B", text: "Pambili ng pagkain at gamot", code: "L" },
+          { letter: "C", text: "Puhunan sa livelihood", code: "H" },
+          { letter: "D", text: "Pampa-campaign materials", code: "T" },
+          { letter: "E", text: "Pang-event para sa marami", code: "B" }
+        ]
+      },
+      {
+        title: "19. Pagkatapos ng activity, ano ginagawa mo?",
+        choices: [
+          { letter: "A", text: "Nagre-report at naghihintay ng next", code: "S" },
+          { letter: "B", text: "Kumakausap sa beneficiaries", code: "L" },
+          { letter: "C", text: "Gumagawa ng documentation", code: "H" },
+          { letter: "D", text: "Nagpo-post about sa impact", code: "T" },
+          { letter: "E", text: "Nagpapasalamat at nag-aaya ulit", code: "B" }
+        ]
+      },
+      {
+        title: "20. Bakit ka nagvo-volunteer?",
+        choices: [
+          { letter: "A", text: "Gusto ko lang makatulong kahit anong paraan", code: "S" },
+          { letter: "B", text: "Gusto kong makatulong directly sa tao", code: "L" },
+          { letter: "C", text: "Gusto kong matuto at lumago", code: "H" },
+          { letter: "D", text: "Gusto kong ipaglaban ang isang cause", code: "T" },
+          { letter: "E", text: "Gusto kong makasama at makabuo ng community", code: "B" }
         ]
       }
     ];
@@ -697,7 +797,7 @@
         image: "assets/archetypes/tagapaglingkod.png"
       },
       H: {
-        name: "TAGAHUBOG 🚀",
+        name: "TAGAHUGIS 🚀",
         title: "IKAW ANG ISIP NG SINAG",
         tagline: "Hinuhubog ang kinabukasan habang tumutulong.",
         sino: "Utak at lider. May plano at gustong lumago.",
@@ -724,7 +824,7 @@
         image: "assets/archetypes/tagapagbuklod.png"
       },
       S: {
-        name: "TAGASUNOD 🌾",
+        name: "TAGASUNOD 🛡️",
         title: "IKAW ANG PAA NG SINAG",
         tagline: "Nandyan. Handa tumulong.",
         sino: "Tahimik pero maaasahan. Hindi naghahanap ng spotlight, basta makatulong.",
@@ -1015,7 +1115,7 @@
     }
 
     function copyResultText(resultHeading, resultTitle, resultTagline, scores) {
-      const text = `ALAMIN ANG ILAW MO SA SINAG ✨\n\n${resultHeading}\n${resultTitle}\n${resultTagline}\n\nScores:\nTagapaglingkod: ${scores.L}\nTagahubog: ${scores.H}\nTagapagtanggol: ${scores.T}\nTagapagbuklod: ${scores.B}\nTagasunod: ${scores.S}`;
+      const text = `ALAMIN ANG ILAW MO SA SINAG ✨\n\n${resultHeading}\n${resultTitle}\n${resultTagline}\n\nScores:\nTagapaglingkod: ${scores.L}\nTagahugis: ${scores.H}\nTagapagtanggol: ${scores.T}\nTagapagbuklod: ${scores.B}\nTagasunod: ${scores.S}`;
       const alert = document.querySelector("#copyAlert");
 
       navigator.clipboard.writeText(text).then(() => {
