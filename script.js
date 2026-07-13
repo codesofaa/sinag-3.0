@@ -47,6 +47,71 @@ const focusAreas = [
   },
 ];
 
+
+/*
+  Barangay Gallery / Slideshow
+  HOW TO ADD MORE PHOTOS:
+  1. Put your image inside assets/gallery/barangay-folder-name/
+  2. Add a new photo object inside the correct album's photos array.
+  3. For a new barangay, copy one whole album block and change barangay, activity, description, and photos.
+*/
+const barangayAlbums = [
+  {
+    barangay: "Barangay Pandan",
+    activity: "Bayanihan Clean-Up Drive",
+    description:
+      "Community members and volunteers working together for a cleaner and more active barangay.",
+    photos: [
+      {
+        src: "assets/gallery/brgy-pandan.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+    ],
+  },
+  {
+    barangay: "Barangay Malabanias",
+    activity: "Bayanihan Clean-Up Drive and Volunteer Engagement",
+    description:
+      "Residents, partners, and volunteers joining hands to support local community initiatives through Project SINAG.",
+    photos: [
+      {
+        src: "assets/gallery/malabanias/malabanias-01.jpg",
+        alt: "Project SINAG group photo with Barangay Malabanias residents and volunteers holding the campaign banner",
+        caption: "Community partners and volunteers",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-02.jpg",
+        alt: "Orientation and briefing during Project SINAG activity in Barangay Malabanias",
+        caption: "Activity briefing and orientation",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-03.jpg",
+        alt: "Community sharing and discussion during Project SINAG in Barangay Malabanias",
+        caption: "Community sharing and engagement",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-04.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+    ],
+  },
+  {
+    barangay: "Barangay Ninoy Aquino",
+    activity: "Community Participation",
+    description:
+      "Strengthening citizen involvement through simple, visible, and collective action.",
+    photos: [
+      {
+        src: "assets/gallery/brgy-ninoy-aquino.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+    ],
+  },
+];
+
 const sdgData = [
   {
     number: "SDG 2",
@@ -162,6 +227,7 @@ const focusGrid = document.querySelector("#focus-grid");
 const sdgTabs = document.querySelector("#sdg-tabs");
 const sdgPanel = document.querySelector("#sdg-panel");
 const stepsList = document.querySelector("#steps-list");
+const barangayGallery = document.querySelector("#barangayGallery");
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 const topButton = document.querySelector(".back-to-top");
@@ -201,6 +267,145 @@ function renderFocusAreas() {
       `
     )
     .join("");
+}
+
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function renderBarangayGallery() {
+  if (!barangayGallery) return;
+
+  barangayGallery.innerHTML = barangayAlbums
+    .map((album, albumIndex) => {
+      const photos = album.photos || [];
+      const hasMultiplePhotos = photos.length > 1;
+      const safeBarangay = escapeHtml(album.barangay);
+      const safeActivity = escapeHtml(album.activity);
+      const safeDescription = escapeHtml(album.description);
+
+      const slides = photos
+        .map((photo, photoIndex) => {
+          const safeCaption = escapeHtml(photo.caption || `${album.barangay} photo ${photoIndex + 1}`);
+          const safeAlt = escapeHtml(photo.alt || `${album.barangay} Project SINAG activity photo`);
+          const safeSrc = escapeHtml(photo.src);
+
+          return `
+            <figure class="gallery-slide ${photoIndex === 0 ? "active" : ""}" data-gallery-slide>
+              <img src="${safeSrc}" alt="${safeAlt}" loading="${photoIndex === 0 ? "eager" : "lazy"}" />
+              <figcaption>${safeCaption}</figcaption>
+            </figure>
+          `;
+        })
+        .join("");
+
+      const controls = hasMultiplePhotos
+        ? `
+          <button class="slide-control slide-control-prev" type="button" data-slide-control="prev" aria-label="Previous ${safeBarangay} photo">‹</button>
+          <button class="slide-control slide-control-next" type="button" data-slide-control="next" aria-label="Next ${safeBarangay} photo">›</button>
+          <div class="slide-dots" aria-label="${safeBarangay} photo controls">
+            ${photos
+              .map(
+                (_, photoIndex) => `
+                  <button
+                    class="slide-dot ${photoIndex === 0 ? "active" : ""}"
+                    type="button"
+                    data-slide-dot="${photoIndex}"
+                    aria-label="Show ${safeBarangay} photo ${photoIndex + 1}"
+                  ></button>
+                `
+              )
+              .join("")}
+          </div>
+        `
+        : "";
+
+      return `
+        <article class="gallery-card barangay-card reveal" data-gallery-card data-album-index="${albumIndex}" data-active-slide="0">
+          <div class="barangay-slideshow" aria-label="${safeBarangay} photo slideshow">
+            <div class="gallery-slide-track">
+              ${slides}
+            </div>
+            ${controls}
+            <span class="album-count">${photos.length} ${photos.length === 1 ? "photo" : "photos"}</span>
+          </div>
+          <div class="gallery-card-content">
+            <span>${safeBarangay}</span>
+            <h3>${safeActivity}</h3>
+            <p>${safeDescription}</p>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function showBarangaySlide(card, targetIndex) {
+  const slides = [...card.querySelectorAll("[data-gallery-slide]")];
+  const dots = [...card.querySelectorAll("[data-slide-dot]")];
+  if (!slides.length) return;
+
+  const nextIndex = (targetIndex + slides.length) % slides.length;
+
+  slides.forEach((slide, index) => {
+    slide.classList.toggle("active", index === nextIndex);
+  });
+
+  dots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === nextIndex);
+    dot.setAttribute("aria-current", index === nextIndex ? "true" : "false");
+  });
+
+  card.dataset.activeSlide = String(nextIndex);
+}
+
+function setupBarangaySlideshows() {
+  document.querySelectorAll("[data-gallery-card]").forEach((card) => {
+    const slides = [...card.querySelectorAll("[data-gallery-slide]")];
+    if (slides.length <= 1) return;
+
+    let autoSlideTimer = null;
+
+    const currentIndex = () => Number(card.dataset.activeSlide || 0);
+    const stopAutoSlide = () => {
+      if (autoSlideTimer) clearInterval(autoSlideTimer);
+      autoSlideTimer = null;
+    };
+    const startAutoSlide = () => {
+      stopAutoSlide();
+      autoSlideTimer = setInterval(() => {
+        showBarangaySlide(card, currentIndex() + 1);
+      }, 5000);
+    };
+
+    card.querySelectorAll("[data-slide-control]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const direction = button.dataset.slideControl === "next" ? 1 : -1;
+        showBarangaySlide(card, currentIndex() + direction);
+        startAutoSlide();
+      });
+    });
+
+    card.querySelectorAll("[data-slide-dot]").forEach((button) => {
+      button.addEventListener("click", () => {
+        showBarangaySlide(card, Number(button.dataset.slideDot));
+        startAutoSlide();
+      });
+    });
+
+    card.addEventListener("mouseenter", stopAutoSlide);
+    card.addEventListener("mouseleave", startAutoSlide);
+    card.addEventListener("focusin", stopAutoSlide);
+    card.addEventListener("focusout", startAutoSlide);
+
+    startAutoSlide();
+  });
 }
 
 function renderSteps() {
@@ -354,6 +559,7 @@ function setupRevealAnimation() {
 function init() {
   renderValues();
   renderFocusAreas();
+  renderBarangayGallery();
   renderSteps();
   renderSdgTabs();
   selectSdg(0);
@@ -361,6 +567,7 @@ function init() {
   setupMobileNav();
   setupBackToTop();
   setupQuizFrameResize();
+  setupBarangaySlideshows();
   setupRevealAnimation();
 }
 
