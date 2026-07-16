@@ -530,7 +530,7 @@
           <h1 id="quiz-title">Alamin ang Ilaw Mo sa SINAG ✨</h1>
           <p>
             Sagutan ang 20 tanong. Pagkatapos, automatic lalabas ang iyong archetype:
-            Tagapaglingkod, Tagahugis, Tagapagtanggol, Tagapagbuklod, o Tagasunod.
+            Tagapaglingkod, Tagahubog, Tagapagtanggol, Tagapagbuklod, o Tagasunod.
           </p>
           <div class="intro-actions">
             <button class="btn btn-primary" type="button" id="startQuizBtn">Start Quiz</button>
@@ -542,7 +542,7 @@
           <img src="assets/archetypes/sinag.png" alt="SINAG mascot" />
           <div class="archetype-pills" aria-label="Available archetypes">
             <span class="pill">❤️ Tagapaglingkod</span>
-            <span class="pill">🚀 Tagahugis</span>
+            <span class="pill">🚀 Tagahubog</span>
             <span class="pill">🌱 Tagapagtanggol</span>
             <span class="pill">🤝 Tagapagbuklod</span>
             <span class="pill">🛡️ Tagasunod</span>
@@ -797,7 +797,7 @@
         image: "assets/archetypes/tagapaglingkod.png"
       },
       H: {
-        name: "TAGAHUGIS 🚀",
+        name: "Tagahubog 🚀",
         title: "IKAW ANG ISIP NG SINAG",
         tagline: "Hinuhubog ang kinabukasan habang tumutulong.",
         sino: "Utak at lider. May plano at gustong lumago.",
@@ -1115,7 +1115,7 @@
     }
 
     function copyResultText(resultHeading, resultTitle, resultTagline, scores) {
-      const text = `ALAMIN ANG ILAW MO SA SINAG ✨\n\n${resultHeading}\n${resultTitle}\n${resultTagline}\n\nScores:\nTagapaglingkod: ${scores.L}\nTagahugis: ${scores.H}\nTagapagtanggol: ${scores.T}\nTagapagbuklod: ${scores.B}\nTagasunod: ${scores.S}`;
+      const text = `ALAMIN ANG ILAW MO SA SINAG ✨\n\n${resultHeading}\n${resultTitle}\n${resultTagline}\n\nScores:\nTagapaglingkod: ${scores.L}\nTagahubog: ${scores.H}\nTagapagtanggol: ${scores.T}\nTagapagbuklod: ${scores.B}\nTagasunod: ${scores.S}`;
       const alert = document.querySelector("#copyAlert");
 
       navigator.clipboard.writeText(text).then(() => {

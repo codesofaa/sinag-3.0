@@ -4,7 +4,9 @@
   To connect the Facebook button, replace the link below with the official page URL.
 */
 
-const FB_PAGE_URL = "https://forms.gle/qcPESn5hdvCLvVTh9";
+const FB_PAGE_URL = "https://www.facebook.com/DILGProjectSINAG";
+
+//https://forms.gle/qcPESn5hdvCLvVTh9
 
 const values = [
   {
@@ -45,6 +47,11 @@ const focusAreas = [
     title: "Climate Action",
     text: "Promote awareness, energy conservation, environmental clubs, green spaces, and climate workshops.",
   },
+  {
+    icon: "💼",
+    title: "Livelihood & Skills Development",
+    text: "Support employability, local livelihood, youth skills, productivity, and safe community-based work opportunities.",
+  },
 ];
 
 
@@ -63,7 +70,72 @@ const barangayAlbums = [
       "Community members and volunteers working together for a cleaner and more active barangay.",
     photos: [
       {
-        src: "assets/gallery/brgy-pandan.jpg",
+        src: "assets/gallery/pandan/brgy-pandan.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-02.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-03.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-04.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-05.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-06.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-07.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-08.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-09.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-10.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-11.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-12.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-13.jpg",
+        alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
+        caption: "Clean-up drive and community action",
+      },
+      {
+        src: "assets/gallery/pandan/pandan-14.jpg",
         alt: "Project SINAG Bayanihan Clean-Up Drive activity in Barangay Pandan",
         caption: "Clean-up drive and community action",
       },
@@ -95,6 +167,51 @@ const barangayAlbums = [
         alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
         caption: "Volunteers preparing for clean-up action",
       },
+      {
+        src: "assets/gallery/malabanias/malabanias-04.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-05.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-06.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-07.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-08.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-09.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-10.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-11.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
+      {
+        src: "assets/gallery/malabanias/malabanias-12.jpg",
+        alt: "Project SINAG participants and volunteers preparing cleaning tools in Barangay Malabanias",
+        caption: "Volunteers preparing for clean-up action",
+      },
     ],
   },
   {
@@ -104,7 +221,72 @@ const barangayAlbums = [
       "Strengthening citizen involvement through simple, visible, and collective action.",
     photos: [
       {
-        src: "assets/gallery/brgy-ninoy-aquino.jpg",
+        src: "assets/gallery/ninoy-aquino/brgy-ninoy-aquino.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-02.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-03.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-04.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-05.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-06.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-07.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-08.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-09.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-10.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-11.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-12.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-13.jpg",
+        alt: "Project SINAG activity in Barangay Ninoy Aquino",
+        caption: "Community participation and bayanihan",
+      },
+      {
+        src: "assets/gallery/ninoy-aquino/ninoy-14.jpg",
         alt: "Project SINAG activity in Barangay Ninoy Aquino",
         caption: "Community participation and bayanihan",
       },
@@ -148,6 +330,25 @@ const sdgData = [
       "Facilitate dialogues on gender equality and women’s empowerment.",
       "Create safe spaces for women and girls.",
       "Support survivors and coordinate with local authorities and hotlines.",
+    ],
+  },
+  {
+    number: "SDG 8",
+    title: "Decent Work and Economic Growth",
+    target: "Promote productive employment, decent work, local livelihood, entrepreneurship, and safe opportunities for all.",
+    household: [
+      "Support family members in learning practical skills such as digital literacy, budgeting, repair, food preparation, or small business basics.",
+      "Buy from local vendors and small community businesses when possible.",
+      "Practice responsible budgeting, saving, and simple livelihood planning at home.",
+      "Encourage youth and adults to join skills training, job fairs, and livelihood seminars.",
+      "Promote safe, respectful, and fair work habits in any household or family business.",
+    ],
+    community: [
+      "Organize skills training, livelihood orientation, and entrepreneurship workshops.",
+      "Coordinate job-matching, local employment referrals, or career guidance with partner offices and stakeholders.",
+      "Support community markets, local products, and micro-enterprise initiatives.",
+      "Invite volunteers to assist in digital forms, documentation, registration, and training support.",
+      "Promote safe volunteer work, proper task assignment, and recognition of community contributions.",
     ],
   },
   {
@@ -206,7 +407,7 @@ const sdgData = [
 const steps = [
   {
     title: "Learn the priority areas",
-    text: "Understand how food sustainability, waste reduction, disaster preparedness, climate action, and gender equality affect your barangay.",
+    text: "Understand how food sustainability, waste reduction, disaster preparedness, climate action, gender equality, and livelihood development affect your barangay.",
   },
   {
     title: "Start with household habits",

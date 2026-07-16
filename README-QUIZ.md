@@ -67,4 +67,4 @@ If this is left blank, the quiz still works but will not save submissions.
 
 ## Naming note
 
-This version uses **Tagahugis** in the quiz text while keeping the existing `tagahubog.png` image filename.
+This version uses **Tagahubog** in the quiz text while keeping the existing `tagahubog.png` image filename.

@@ -1171,13 +1171,14 @@ h1 {
   bottom: 12px;
   max-width: calc(100% - 96px);
   padding: 7px 10px;
+  margin-bottom: 30px;
   border-radius: 999px;
-  background: rgba(4, 21, 46, 0.68);
   color: #fff;
   font-size: 0.78rem;
   font-weight: 850;
   line-height: 1.25;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(1.2px);
+  opacity: 100%;
 }
 
 .album-count {
@@ -1237,8 +1238,8 @@ h1 {
   gap: 7px;
   padding: 6px 8px;
   border-radius: 999px;
-  background: rgba(4, 21, 46, 0.44);
-  backdrop-filter: blur(8px);
+  background: rgba(4, 21, 46, 0.05);
+  backdrop-filter: blur(2px);
 }
 
 .slide-dot {
