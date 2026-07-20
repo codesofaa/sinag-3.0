@@ -4,7 +4,7 @@
   To connect the Facebook button, replace the link below with the official page URL.
 */
 
-const FB_PAGE_URL = "https://forms.gle/qcPESn5hdvCLvVTh9";
+const FB_PAGE_URL = "https://www.facebook.com/DILGProjectSINAG";
 
 const values = [
   {
