@@ -4,9 +4,7 @@
   To connect the Facebook button, replace the link below with the official page URL.
 */
 
-const FB_PAGE_URL = "https://www.facebook.com/DILGProjectSINAG";
-
-//https://forms.gle/qcPESn5hdvCLvVTh9
+const FB_PAGE_URL = "https://forms.gle/qcPESn5hdvCLvVTh9";
 
 const values = [
   {
@@ -46,11 +44,6 @@ const focusAreas = [
     icon: "🌱",
     title: "Climate Action",
     text: "Promote awareness, energy conservation, environmental clubs, green spaces, and climate workshops.",
-  },
-  {
-    icon: "💼",
-    title: "Livelihood & Skills Development",
-    text: "Support employability, local livelihood, youth skills, productivity, and safe community-based work opportunities.",
   },
 ];
 
@@ -333,25 +326,6 @@ const sdgData = [
     ],
   },
   {
-    number: "SDG 8",
-    title: "Decent Work and Economic Growth",
-    target: "Promote productive employment, decent work, local livelihood, entrepreneurship, and safe opportunities for all.",
-    household: [
-      "Support family members in learning practical skills such as digital literacy, budgeting, repair, food preparation, or small business basics.",
-      "Buy from local vendors and small community businesses when possible.",
-      "Practice responsible budgeting, saving, and simple livelihood planning at home.",
-      "Encourage youth and adults to join skills training, job fairs, and livelihood seminars.",
-      "Promote safe, respectful, and fair work habits in any household or family business.",
-    ],
-    community: [
-      "Organize skills training, livelihood orientation, and entrepreneurship workshops.",
-      "Coordinate job-matching, local employment referrals, or career guidance with partner offices and stakeholders.",
-      "Support community markets, local products, and micro-enterprise initiatives.",
-      "Invite volunteers to assist in digital forms, documentation, registration, and training support.",
-      "Promote safe volunteer work, proper task assignment, and recognition of community contributions.",
-    ],
-  },
-  {
     number: "SDG 11",
     title: "Sustainable Cities and Communities",
     target: "Reduce disaster impacts and help build safer, inclusive, resilient, and sustainable communities.",
@@ -407,7 +381,7 @@ const sdgData = [
 const steps = [
   {
     title: "Learn the priority areas",
-    text: "Understand how food sustainability, waste reduction, disaster preparedness, climate action, gender equality, and livelihood development affect your barangay.",
+    text: "Understand how food sustainability, waste reduction, disaster preparedness, climate action, and gender equality affect your barangay.",
   },
   {
     title: "Start with household habits",
